@@ -1,32 +1,25 @@
-# inter-vlan-routing-lab
+# Inter-VLAN Routing Lab
 
-OBJECTIVE:
-Enable communication between VLAN 100 (IT) and VLAN 200 (Sales).
+## Objective
+Enable communication between VLAN 100 (IT) and VLAN 200 (Sales)
 
- Network Overview:
- 
-4 switches (layer 2)
-1 router (layer 3)
-trunk links between switches
-router-on-a-stick used
+## Topology
+See topology.png
 
-How it works (simple likhna):
+## Configuration
+Configs are available in the /configs folder
 
-switches VLAN create karte hain
-trunks VLAN traffic carry karte hain
-router subinterfaces routing karta hai
+## How it works
+- Switches create VLANs
+- Trunks carry VLAN traffic
+- Router routes between VLANs
 
- Output:
- 
-Devices in VLAN 100 can communicate with VLAN 200 via router.
-DHCP assigns IP automatically.
+## Result
+Devices from different VLANs can communicate
 
- Security relevance :
- 
-- VLANs isolate departments (IT vs Sales)
-- Trunk links carry multiple VLANs securely
-- Router enforces controlled inter-VLAN communication
-- DHCP reduces manual configuration errors
+## Security Relevance
+- VLANs isolate departments
+- Router controls communication
 
 
 Possible attack:
